@@ -4,6 +4,7 @@ about: About new task
 title: "[ISSUE] Description"
 labels: ''
 assignees: ''
+
 ---
 
 ### What is this about?
@@ -22,4 +23,3 @@ None
 
 ###### Placeholder app example
 ![Image](https://placehold.co/800x200)
-
