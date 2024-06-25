@@ -19,14 +19,8 @@ body:
     attributes:
       label: Additional considerations
       description: Provide error logs or another considerations.
-      value: ''
   - type: textarea
     attributes:
       label: Images (not required)
       description: Relevant images about the issue
       placeholder: Paste or upload your image with a title.
-  - type: markdown
-    attributes:
-      value: >-
-        This template was generated with [Issue Forms
-        Creator](https://issue-forms-creator.netlify.app)
