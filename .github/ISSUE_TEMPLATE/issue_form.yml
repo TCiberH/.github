@@ -1,0 +1,53 @@
+name: Bug Report new
+description: Use this template to report a bug.
+title: "[BUG] Descreva o título da issue aqui"
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por relatar um problema! Por favor, preencha as informações abaixo.
+
+  - type: input
+    id: what-is-this-about
+    attributes:
+      label: What is this about?
+      description: Descreva o problema ou sugestão
+      placeholder: Descreva o problema aqui
+      value: ''
+      required: true
+
+  - type: textarea
+    id: detailed-description
+    attributes:
+      label: Detailed Description
+      description: Forneça uma descrição detalhada do problema
+      placeholder: Detalhe o problema aqui
+      value: ''
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Marque se aplicável
+      options:
+        - label: None
+
+  - type: input
+    id: additional-considerations
+    attributes:
+      label: Additional Considerations
+      description: Informações adicionais
+      placeholder: Adicione informações adicionais aqui
+      value: ''
+      required: false
+
+  - type: textarea
+    id: images
+    attributes:
+      label: Images
+      description: Adicione links para imagens, se necessário
+      placeholder: Insira links para imagens aqui
+      value: 'None'
+      required: false
