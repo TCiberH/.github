@@ -1,64 +1,64 @@
----
-name: 🐛 New Issue
-description: Description
-title: '[NewIssue]: '
-labels:
-  - needs triage
----
+name: Relatório de Bug
+description: Envie um relatório de bug.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
 body:
   - type: markdown
     attributes:
-      value: >
-        **Thanks for reporting an issue!** Please make sure you read our [issue
-        guidelines](https://github.com/theos/theos/blob/master/.github/CONTRIBUTING.md)
-        first, then fill out the fields below.
-
-
-        If you’re unsure whether the issue you’re having is a bug, you can post
-        in [Discussions](https://github.com/theos/theos/discussions) instead.
-  - type: textarea
-    id: bug-steps
+      value: |
+        Obrigado por preencher este relatório de bug!
+  - type: input
+    id: contact
     attributes:
-      label: What are the steps to reproduce this issue?
-      placeholder: |
-        1. Make new project
-        2. Run `make package`
-        3. …
-        4. See error
-    validations:
-      required: true
+      label: Detalhes de Contato
+      description: Como podemos entrar em contato com você se precisarmos de mais informações?
+      placeholder: ex. email@example.com
+      validations:
+        required: false
   - type: textarea
-    id: bug-description
+    id: what-happened
     attributes:
-      label: What happens?
-      description: A clear and concise description of what the bug is.
-    validations:
-      required: true
+      label: O que aconteceu?
+      description: Também nos diga o que você esperava que acontecesse.
+      placeholder: Conte-nos o que você viu!
+      value: "Um bug aconteceu!"
+      validations:
+        required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Versão
+      description: Qual versão do nosso software você está usando?
+      options:
+        - 1.0.2 (Padrão)
+        - 1.0.3 (Edge)
+      default: 0
+      validations:
+        required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Quais navegadores você está vendo o problema?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
   - type: textarea
-    id: bug-expectation
+    id: logs
     attributes:
-      label: What were you expecting to happen?
-      description: A clear and concise description of what was supposed to happen.
-    validations:
-      required: true
-  - type: textarea
-    id: bug-logs
-    attributes:
-      label: Paste any relevant logs, error output, etc.
-      description: >
-        Please copy and paste any relevant log output. This will be
-        automatically formatted into code, so no need for backticks.
-
-        (If it’s long, please paste to https://gist.github.com/ and insert the
-        link here.)
+      label: Saída de log relevante
+      description: Copie e cole qualquer saída de log relevante. Isso será formatado automaticamente como código.
       render: shell
-  - type: textarea
-    id: bug-context
+  - type: checkboxes
+    id: terms
     attributes:
-      label: Additional context
-      description: Add any other context you can provide about the problem here.
-  - type: markdown
-    attributes:
-      value: >-
-        This template was generated with [Issue Forms
-        Creator](https://issue-forms-creator.netlify.app)
+      label: Código de Conduta
+      description: Ao enviar este problema, você concorda em seguir nosso [Código de Conduta](https://bing.com/search?q=).
+      options:
+        - label: Concordo em seguir o Código de Conduta deste projeto
+          required: true
