@@ -7,4 +7,5 @@ assignees: ''
 
 ---
 
-
+- **Details :** Input your details here
+- **Version:** What is de version?
