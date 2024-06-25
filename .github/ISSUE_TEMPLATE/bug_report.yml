@@ -1,0 +1,24 @@
+name: Bug Report
+description: Template for a bug report. Please fill in all required fields (marked with an asterisk *).
+labels: 'bug'
+body:
+  - type: textarea
+    attributes:
+      label: What is this about?*
+      description: A clear and concise description of the problem
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Instructions
+      description: Provide steps to reproduce the problem
+  - type: textarea
+    attributes:
+      label: Additional considerations
+      description: Provide error logs or another considerations.
+      value: ''
+  - type: textarea
+    attributes:
+      label: Images (not required)
+      description: Relevant images about the issue
+      placeholder: Paste or upload your image with a title.

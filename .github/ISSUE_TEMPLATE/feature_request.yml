@@ -1,21 +1,22 @@
-name: New Task
+name: Feature request
 description: Template for new tasks. Please fill in all required fields (marked with an asterisk *).
+labels: 'enhancement'
 body:
   - type: textarea
     attributes:
       label: What is this about?*
-      description: A clear and concise description of the problem
+      description: A clear and concise description of the task
     validations:
       required: true
   - type: textarea
     attributes:
       label: Instructions
-      description: Provide steps to reproduce the problem
+      description: Provide steps to finish the task
   - type: textarea
     attributes:
       label: Additional considerations
-      description: Provide error logs
-      value: '- None'
+      description: Provide observations about this case.
+      value: ''
   - type: textarea
     attributes:
       label: Images (not required)
