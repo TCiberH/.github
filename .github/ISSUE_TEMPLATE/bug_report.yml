@@ -1,5 +1,9 @@
 name: Bug Report
 description: Template for a bug report. Please fill in all required fields (marked with an asterisk *).
+title: '[Name]: '
+labels:
+  - enhancement
+
 body:
   - type: textarea
     attributes:
@@ -21,5 +25,8 @@ body:
       label: Images (not required)
       description: Relevant images about the issue
       placeholder: Paste or upload your image with a title.
-labels:
-- bug
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
