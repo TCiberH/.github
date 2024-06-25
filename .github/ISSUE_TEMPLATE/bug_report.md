@@ -1,6 +1,9 @@
+---
 name: Bug report
+about: new
 description: Template for bug reports
 title: '[Bug]: '
+---
 labels:
   - bug
 body:
