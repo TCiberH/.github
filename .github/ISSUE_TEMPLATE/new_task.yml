@@ -1,25 +1,26 @@
 name: New Task
-description: Create a new task
-title: ''
+description: Template for bug reports
+title: '[Name]: '
 body:
   - type: textarea
     attributes:
       label: What is this about?
       description: A clear and concise description of the problem
-      required: true  # Certifique-se de colocar required dentro de attributes
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Instructions
-      description: Provide steps to reproduce the problem
+      description: provide steps to reproduce the problem
   - type: textarea
     attributes:
-      label: Additional considerations
-      description: Provide error logs
+      label: ' Additional considerations'
+      description: provide error logs
       value: '- None'
-      required: true  # Certifique-se de colocar required dentro de attributes
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Images
       description: Relevant images about the issue, not required.
       placeholder: Paste or upload your image with a title.
-  - type: markdown
