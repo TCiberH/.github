@@ -1,0 +1,31 @@
+name: New Task
+description: Create a new task
+title: '[Name]: '
+body:
+  - type: textarea
+    attributes:
+      label: What is this about?
+      description: A clear and concise description of the problem
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Instructions
+      description: provide steps to reproduce the problem
+  - type: textarea
+    attributes:
+      label: ' Additional considerations'
+      description: provide error logs
+      value: '- None'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Images
+      description: Relevant images about the issue, not required.
+      placeholder: Paste or upload your image with a title.
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
