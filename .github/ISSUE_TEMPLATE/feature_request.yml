@@ -1,6 +1,5 @@
 name: Feature request
 description: Template for new tasks. Please fill in all required fields (marked with an asterisk *).
-
 body:
   - type: textarea
     attributes:
