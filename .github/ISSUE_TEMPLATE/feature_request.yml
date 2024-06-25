@@ -22,5 +22,3 @@ body:
       label: Images (not required)
       description: Relevant images about the issue
       placeholder: Paste or upload your image with a title.
-labels:
-- enhancement
