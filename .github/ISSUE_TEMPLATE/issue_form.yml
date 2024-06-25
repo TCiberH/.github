@@ -1,53 +1,62 @@
-name: Bug Report new
-description: Use this template to report a bug.
-title: "[BUG] Descreva o título da issue aqui"
-labels: ['bug']
+name: 🐛 New Issue
+description: Description
+title: '[Name]: '
+labels:
+  - needs triage
 body:
   - type: markdown
     attributes:
-      value: |
-        Obrigado por relatar um problema! Por favor, preencha as informações abaixo.
+      value: >
+        **Thanks for reporting an issue!** Please make sure you read our [issue
+        guidelines](https://github.com/theos/theos/blob/master/.github/CONTRIBUTING.md)
+        first, then fill out the fields below.
 
-  - type: input
-    id: what-is-this-about
-    attributes:
-      label: What is this about?
-      description: Descreva o problema ou sugestão
-      placeholder: Descreva o problema aqui
-      value: ''
-      required: true
 
+        If you’re unsure whether the issue you’re having is a bug, you can post
+        in [Discussions](https://github.com/theos/theos/discussions) instead.
   - type: textarea
-    id: detailed-description
+    id: bug-steps
     attributes:
-      label: Detailed Description
-      description: Forneça uma descrição detalhada do problema
-      placeholder: Detalhe o problema aqui
-      value: ''
+      label: What are the steps to reproduce this issue?
+      placeholder: |
+        1. Make new project
+        2. Run `make package`
+        3. …
+        4. See error
+    validations:
       required: true
-
-  - type: checkboxes
-    id: checklist
-    attributes:
-      label: Checklist
-      description: Marque se aplicável
-      options:
-        - label: None
-
-  - type: input
-    id: additional-considerations
-    attributes:
-      label: Additional Considerations
-      description: Informações adicionais
-      placeholder: Adicione informações adicionais aqui
-      value: ''
-      required: false
-
   - type: textarea
-    id: images
+    id: bug-description
     attributes:
-      label: Images
-      description: Adicione links para imagens, se necessário
-      placeholder: Insira links para imagens aqui
-      value: 'None'
-      required: false
+      label: What happens?
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: bug-expectation
+    attributes:
+      label: What were you expecting to happen?
+      description: A clear and concise description of what was supposed to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: bug-logs
+    attributes:
+      label: Paste any relevant logs, error output, etc.
+      description: >
+        Please copy and paste any relevant log output. This will be
+        automatically formatted into code, so no need for backticks.
+
+        (If it’s long, please paste to https://gist.github.com/ and insert the
+        link here.)
+      render: shell
+  - type: textarea
+    id: bug-context
+    attributes:
+      label: Additional context
+      description: Add any other context you can provide about the problem here.
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
