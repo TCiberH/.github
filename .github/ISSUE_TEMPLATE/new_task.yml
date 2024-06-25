@@ -1,25 +1,23 @@
 name: New Task
-description: Template for new tasks
+description: Template for new tasks. Please fill in all required fields (marked with an asterisk *).
 body:
   - type: textarea
     attributes:
-      label: What is this about?
+      label: What is this about?*
       description: A clear and concise description of the problem
     validations:
       required: true
   - type: textarea
     attributes:
       label: Instructions
-      description: provide steps to reproduce the problem
+      description: Provide steps to reproduce the problem
   - type: textarea
     attributes:
-      label: ' Additional considerations'
-      description: provide error logs
+      label: Additional considerations
+      description: Provide error logs
       value: '- None'
-    validations:
-      required: true
   - type: textarea
     attributes:
-      label: Images
-      description: Relevant images about the issue, not required.
+      label: Images (not required)
+      description: Relevant images about the issue
       placeholder: Paste or upload your image with a title.
