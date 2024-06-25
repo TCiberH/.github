@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: just testing
+    url: https://github.com/TCiberH/makerPlay/issues/new?template=issue_template.md
+    about: Testing
