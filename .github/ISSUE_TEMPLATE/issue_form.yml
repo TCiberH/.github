@@ -2,7 +2,7 @@ name: 🐛 New Issue
 description: Description
 title: '[Name]: '
 labels:
-  - needs triage
+  - enhancement
 body:
   - type: markdown
     attributes:
