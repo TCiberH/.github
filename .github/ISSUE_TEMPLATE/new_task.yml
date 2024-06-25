@@ -1,6 +1,5 @@
 name: New Task
 description: Template for new tasks
-title: ''
 body:
   - type: textarea
     attributes:
