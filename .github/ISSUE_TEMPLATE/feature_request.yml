@@ -1,5 +1,5 @@
 name: Feature request
-description: Issue for new tasks. Please fill in all required fields (marked with an asterisk *).
+description: Issue for new tasks
 labels:
   - enhancement
 body:

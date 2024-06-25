@@ -1,5 +1,5 @@
 name: Common issue
-description: Issue for a bug report. Please fill in all required fields (marked with an asterisk *).
+description: Issue for a generic issue.
 body:
   - type: textarea
     attributes:
