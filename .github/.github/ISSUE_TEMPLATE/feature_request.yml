@@ -1,0 +1,26 @@
+name: Feature request
+description: Issue for new tasks
+labels:
+  - enhancement
+body:
+  - type: textarea
+    attributes:
+      label: What is this about?*
+      description: A clear and concise description of the task
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Instructions*
+      description: Provide steps to finish the task
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional considerations
+      description: Provide observations about this case.
+  - type: textarea
+    attributes:
+      label: Images
+      description: Relevant images about the issue
+      placeholder: Paste or upload your image with a title.
