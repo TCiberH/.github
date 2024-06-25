@@ -1,24 +1,22 @@
-name: Feature request
-description: Issue for new tasks. Please fill in all required fields (marked with an asterisk *).
-labels:
-  - enhancement
+name: Common issue
+description: Issue for a bug report. Please fill in all required fields (marked with an asterisk *).
 body:
   - type: textarea
     attributes:
       label: What is this about?*
-      description: A clear and concise description of the task
+      description: A clear and concise description of the problem
     validations:
       required: true
   - type: textarea
     attributes:
       label: Instructions*
-      description: Provide steps to finish the task
+      description: Provide steps to reproduce the problem
     validations:
       required: true
   - type: textarea
     attributes:
       label: Additional considerations
-      description: Provide observations about this case.
+      description: Provide error logs or another considerations.
   - type: textarea
     attributes:
       label: Images
