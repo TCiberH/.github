@@ -1,8 +1,10 @@
+---
 name: 🐛 New Issue
 description: Description
 title: '[NewIssue]: '
 labels:
   - needs triage
+---
 body:
   - type: markdown
     attributes:
