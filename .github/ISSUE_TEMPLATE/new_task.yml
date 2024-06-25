@@ -1,6 +1,6 @@
 name: New Task
-description: Template for bug reports
-title: '[Name]: '
+description: Template for new tasks
+title: ''
 body:
   - type: textarea
     attributes:
