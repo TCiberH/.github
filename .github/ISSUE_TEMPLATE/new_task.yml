@@ -6,20 +6,17 @@ body:
     attributes:
       label: What is this about?
       description: A clear and concise description of the problem
-    validations:
-    required: true
+      required: true  # Certifique-se de colocar required dentro de attributes
   - type: textarea
     attributes:
       label: Instructions
-      description: provide steps to reproduce the problem
-       required: true
+      description: Provide steps to reproduce the problem
   - type: textarea
     attributes:
-      label: ' Additional considerations'
-      description: provide error logs
-      value: 'None'
-    validations:
-      required: false
+      label: Additional considerations
+      description: Provide error logs
+      value: '- None'
+      required: true  # Certifique-se de colocar required dentro de attributes
   - type: textarea
     attributes:
       label: Images
