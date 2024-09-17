@@ -4,41 +4,36 @@ body:
   - type: input
     attributes:
       label: Page URL
-      description: URL where the issue is found
-      placeholder: Example: /login, /dashboard, /profile
+      description: "URL where the issue is found"
+      placeholder: "Example: /login, /dashboard, /profile"
     validations:
       required: true
   - type: textarea
     attributes:
       label: Description*
-      description: A clear and concise description of the problem
+      description: "A clear and concise description of the problem"
     validations:
       required: true
   - type: textarea
     attributes:
       label: Scenario*
-      description: how to reproduce this scenario
+      description: "How to reproduce this scenario"
     validations:
       required: true
   - type: textarea
     attributes:
       label: Additional considerations
-      description: Details that might be useful about this sport (if necessary).
+      description: "Details that might be useful about this sport (if necessary)."
   - type: textarea
     attributes:
       label: Images
-      description: Relevant images about the issue
-      placeholder: It is necessary to include all images that include this report, this field is mandatory.
+      description: "Relevant images about the issue"
+      placeholder: "It is necessary to include all images that include this report, this field is mandatory."
     validations:
       required: true
   - type: textarea
     attributes:
       label: Terminal output
-      description: Take a screenshot of the terminal output
-      placeholder: Instructions: After finding the error, inspect the element on the page and take a screenshot of the browser terminal.
-
-This type of situation is ONLY necessary in errors that involve data in some way.
-
-Visual errors are not included.
+      description: "Take a screenshot of the terminal output. Instructions: After finding the error, inspect the element on the page and take a screenshot of the browser terminal. This type of situation is ONLY necessary in errors that involve data in some way. Visual errors are not included."
     validations:
       required: false
