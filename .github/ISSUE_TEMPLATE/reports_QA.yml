@@ -1,5 +1,7 @@
 name: Reports QA
 description: Issue to details bugs or problems found in the QA process.
+projects:
+  - TCiberH/1
 body:
   - type: input
     attributes:
