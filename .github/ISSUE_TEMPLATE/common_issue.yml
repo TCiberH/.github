@@ -1,5 +1,7 @@
 name: Common issue
 description: Issue for a generic issue.
+projects:
+  - TCiberH/1
 body:
   - type: textarea
     attributes:
