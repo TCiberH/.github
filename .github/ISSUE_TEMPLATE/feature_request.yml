@@ -2,6 +2,8 @@ name: Feature request
 description: Issue for new tasks
 labels:
   - enhancement
+projects:
+  - TCiberH/1
 body:
   - type: textarea
     attributes:
